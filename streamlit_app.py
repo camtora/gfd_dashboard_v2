@@ -2062,7 +2062,7 @@ elif selected_tab == "Live Dashboard":
     
         if 'live_dashboard_page' not in st.session_state:
             st.session_state.live_dashboard_page = 0
-            st.experimental_rerun()
+            st.rerun()
     
         current_page = st.session_state.live_dashboard_page
         start = current_page * per_page
