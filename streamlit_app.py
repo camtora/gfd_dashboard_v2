@@ -1887,7 +1887,7 @@ elif selected_tab == "Live Dashboard":
     now = datetime.datetime.now()
     
     # Add 3 hours to get Eastern Time (quick fix)
-    now_eastern = now + datetime.timedelta(hours=3)
+    now_eastern = now - datetime.timedelta(hours=4)
     today = now_eastern.date()
     
     # Build timestamps for queries
