@@ -891,7 +891,6 @@ if selected_tab == "Donor Search":
     st.markdown(f"""
         <div style='text-align: center; background-color: #d1ecf1; padding: 10px; border-radius: 5px; margin-bottom: 20px;'>
             <div style='margin: 0; font-size: 32px;'>Donor Search</div>
-            <div style='margin: 0; font-size: 16px;'><i>Total $ Raised Today: ${total_raised:,.2f}</i></div>
         </div>
     """, unsafe_allow_html=True)
     
