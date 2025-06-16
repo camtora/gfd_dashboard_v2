@@ -1948,7 +1948,7 @@ elif selected_tab == "Live Dashboard":
         WHERE DONOR_STATUS = 'Successful'
           AND DONOR_ACQ_DTM >= CURRENT_DATE
           AND GIFT_TYPE = 'Recurring'
-          AND REPCODE <> 'TESTFRNACA'
+          AND REPCODE NOT LIKE 'TEST%'
         GROUP BY CHARITY_NM
         
         UNION ALL
