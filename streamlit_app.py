@@ -1937,7 +1937,7 @@ elif selected_tab == "Live Dashboard":
     count_yesterday_block = historical_df["COUNT_YESTERDAY_BLOCK"].iloc[0]
     count_last_week_block = historical_df["COUNT_LAST_WEEK_BLOCK"].iloc[0]
 
-    goal = count_last_week_block
+    goal = count_last_week
 
     # Get approved donors by charity
     query = """
