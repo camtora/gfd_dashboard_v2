@@ -1913,7 +1913,7 @@ elif selected_tab == "Live Dashboard":
             FROM FIVETRAN_DATABASE.ARMOR_SQL_2012_DBO.LOGGING_BY_GFDID
             WHERE DONOR_STATUS = 'Successful'
               AND GIFT_TYPE = 'Recurring'
-              AND REPCODE <> 'TESTFRNACA'
+              AND REPCODE NOT LIKE 'TEST%'
     
             UNION ALL
     
