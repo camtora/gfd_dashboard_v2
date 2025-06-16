@@ -2271,7 +2271,7 @@ elif selected_tab == "Weekly Donor Trends":
             COUNT_IF(DONOR_STATUS = 'Successful') AS SUCCESSFUL,
             COUNT_IF(DONOR_STATUS = 'Payment Failed') AS DECLINED
         FROM FIVETRAN_DATABASE.ARMOR_SQL_2012_DBO.LOGGING_BY_GFDID
-        WHERE DONOR_ACQ_DTM >= DATEADD(DAY, -7, CURRENT_DATE)
+        WHERE DONOR_ACQ_DTM >= DATEADD(DAY, -14, CURRENT_DATE)
           AND GIFT_TYPE = 'Recurring'
         GROUP BY DATE
         ORDER BY DATE
