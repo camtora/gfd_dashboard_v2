@@ -1937,6 +1937,7 @@ elif selected_tab == "Live Dashboard":
     count_yesterday_block = historical_df["COUNT_YESTERDAY_BLOCK"].iloc[0]
     count_last_week_block = historical_df["COUNT_LAST_WEEK_BLOCK"].iloc[0]
 
+    goal = count_last_week_block
 
     # Get approved donors by charity
     query = """
@@ -1974,18 +1975,6 @@ elif selected_tab == "Live Dashboard":
                 <div style='margin: 0; font-size: 16px;'><i>Showing Total Count of Approved Recurring Donors Today, Refreshing Every 5 Minutes<br>MadeMedia Charities Included, Goal set to same day last week.</i></div>
         </div>
     """, unsafe_allow_html=True)
-
-    count_yesterday = historical_df['COUNT_YESTERDAY'].iloc[0]
-    count_last_week = historical_df['COUNT_LAST_WEEK'].iloc[0]
-    count_yesterday_block = historical_df['COUNT_YESTERDAY_BLOCK'].iloc[0]
-    count_last_week_block = historical_df['COUNT_LAST_WEEK_BLOCK'].iloc[0]
-
-    goal = count_last_week_block
-
-    cutoff_display_time = interval_time.strftime("%-I:%M %p")  # e.g., "10:30 PM"
-    
-    yesterday_label = f"Yesterday @ {cutoff_display_time}"
-    lastweek_label = f"Last Week @ {cutoff_display_time}"
 
     st.markdown(f"""
         <div style='display: flex; justify-content: space-around; text-align: center; margin-bottom: 15px;'>
