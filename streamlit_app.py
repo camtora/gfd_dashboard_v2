@@ -99,9 +99,9 @@ made_media_charities = [
 
 # Define the available tabs
 tabs = [
-    "Donor Search", "Search History", "Transactions", "Donors By Charity", "Donors By Office",
+    "Live Dashboard", "Donor Search", "Search History", "Transactions", "Donors By Charity", "Donors By Office",
     "Charity Overview", "Multiple Failed Attempts", "Reconciliation", "Process Later List",
-    "Live Dashboard", "Payment Processor Status", "Prepaid & Gift Monitoring", "Weekly Donor Trends",
+    "Payment Processor Status", "Prepaid & Gift Monitoring", "Weekly Donor Trends",
     "Drillable Donor Explorer", "BIN Risk Analyzer"
 ]
 
