@@ -107,7 +107,7 @@ tabs = [
 
 # Initialize selected_tab in session state if it doesn't exist
 if 'selected_tab' not in st.session_state:
-    st.session_state['selected_tab'] = "Donor Search"
+    st.session_state['selected_tab'] = "Live Dashboard"
 
 # Function to update the tab selection
 def select_tab(tab_name):
